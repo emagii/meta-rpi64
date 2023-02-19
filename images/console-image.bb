@@ -112,8 +112,8 @@ IMAGE_INSTALL += " \
 "
 
 set_local_timezone() {
-    ln -sf /usr/share/zoneinfo/EST5EDT ${IMAGE_ROOTFS}/etc/localtime
-    echo 'America/New_York' > ${IMAGE_ROOTFS}/etc/timezone
+    ln -sf /usr/share/zoneinfo/Europe/Stockholm ${IMAGE_ROOTFS}/etc/localtime
+    echo 'Europe/Stockholm' > ${IMAGE_ROOTFS}/etc/timezone
 }
 
 ROOTFS_POSTPROCESS_COMMAND += " \
